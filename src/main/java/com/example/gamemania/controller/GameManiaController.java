@@ -21,6 +21,7 @@ public class GameManiaController {
         repository.save(gameData);
         return;
     }
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping
     public List<GameResponseDTO> getAll(){
         List<GameResponseDTO> gameList = repository.findAll().stream().map(GameResponseDTO::new).toList();
