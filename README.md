@@ -18,4 +18,5 @@ E por fim, entre no arquivo da classe `GamemaniaApplication` para executar o pro
 
 <h2>Integração com Frontend</h2>
 
-Link em breve!
+Para realizar a integração com o Frontend, você pode clonar o [Projeto Game Mania - Frontend](https://github.com/karolineksn/ProjetoGameManiaFront) e rodar localmente.
+
