@@ -1,27 +1,28 @@
 package com.example.gamemania.game;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Table(name= "games")
 @Entity(name= "games")
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class Game {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
     private String image;
     private Integer price;
 
+    private boolean available;
+
     public Game(GameRequestDTO data){
-        this.image = data.image();
-        this.price = data.price();
-        this.title = data.title();
+        this.image = data.getImage();
+        this.price = data.getPrice();
+        this.title = data.getTitle();
     }
 }
