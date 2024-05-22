@@ -4,9 +4,9 @@ public class GameRequestDTO {
     private String title;
     private String image;
     private Integer price;
-    private boolean available;
 
-    // Getters e Setters
+    // Getters and setters
+
     public String getTitle() {
         return title;
     }
@@ -30,14 +30,4 @@ public class GameRequestDTO {
     public void setPrice(Integer price) {
         this.price = price;
     }
-
-    public boolean isAvailable() {
-        return available;
-    }
-
-    public void setAvailable(boolean available) {
-        this.available = available;
-    }
-
-    // Outros getters e setters, se necessário
 }

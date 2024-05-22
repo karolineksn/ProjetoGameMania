@@ -1,0 +1,1 @@
+--ALTER TABLE games ADD COLUMN available BOOLEAN DEFAULT true;

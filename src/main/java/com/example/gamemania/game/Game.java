@@ -17,7 +17,6 @@ public class Game {
     private String title;
     private String image;
     private Integer price;
-
     private boolean available;
 
     public Game(GameRequestDTO data){
